@@ -20,7 +20,7 @@ flowchart LR
     device ==>|4. fetch, verify, place| pieces
 ```
 
-Empty today. First content arrives with Milestone 3 in the source repository, when the first plugin release cuts. The manifest format, signature format, and directory layout are authored by the first workflow that publishes them - see the source repo's [SHOWCASE.md](https://github.com/foonerd/evo-device-volumio/blob/main/SHOWCASE.md) deferred-concerns section and [BUILD.md](https://github.com/foonerd/evo-device-volumio/blob/main/BUILD.md) section 14 for the tracked open questions.
+Empty today. The brand-neutral plugins that originally targeted Milestones 3-5 in this distribution migrated to [evo-plugins-audio](https://github.com/foonerd/evo-plugins-audio); their signed bytes will live in [evo-plugins-audio-artefacts](https://github.com/foonerd/evo-plugins-audio-artefacts) instead. First content here is the first Volumio-specific piece (the planned candidate is a metadata plugin that integrates with Volumio's existing metadata pipeline). The release-plane contract (manifest schema, signature format, directory layout) is awaiting evo-core; the publish pipeline waits on that contract landing.
 
 ## Channels
 
@@ -54,11 +54,12 @@ Specific signing tool, key management process, and signature format are tracked 
 
 ## Status
 
-Empty. Populated by the release workflows from Milestone 3 onward. Subsequent milestones grow the piece set.
+Empty. Populated by the release workflows once two preconditions are met: (a) the release-plane contract lands in evo-core, (b) the first Volumio-specific piece is authored. Brand-neutral pieces this distribution admits (`org.evoframework.*` plugins) ship via [evo-plugins-audio-artefacts](https://github.com/foonerd/evo-plugins-audio-artefacts), not this repository.
 
 ## Related
 
 -   [foonerd/evo-device-volumio](https://github.com/foonerd/evo-device-volumio) - the source repository this release plane serves.
+-   [foonerd/evo-plugins-audio-artefacts](https://github.com/foonerd/evo-plugins-audio-artefacts) - the brand-neutral audio plugin commons release plane; consumed by this distribution.
 -   [foonerd/evo-core](https://github.com/foonerd/evo-core) - the framework.
 
 ## License
