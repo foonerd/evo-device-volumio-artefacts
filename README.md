@@ -50,7 +50,7 @@ Workflow shapes, triggers, and trade-offs live in the source repo's [SHOWCASE.md
 
 The vendor signs every artefact with their private key. Devices verify against the vendor's public key, which is distributed as part of the distribution's trust material. The framework does not sign for devices; operator trust is placed in the vendor.
 
-Specific signing tool, key management process, and signature format are tracked as deferred items. They will be chosen when the first signature is cut at Milestone 3. See the source repo's [SHOWCASE.md](https://github.com/foonerd/evo-device-volumio/blob/main/SHOWCASE.md) section 10 for the trust posture at concept level.
+Specific signing tool, key management process, and signature format are tracked as open items. They will be chosen when the first signature is cut at Milestone 3. See the source repo's [SHOWCASE.md](https://github.com/foonerd/evo-device-volumio/blob/main/SHOWCASE.md) section 10 for the trust posture at concept level.
 
 ## Status
 
